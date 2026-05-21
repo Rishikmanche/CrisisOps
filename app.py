@@ -1,13 +1,16 @@
 import streamlit as st
 import pandas as pd
 import datetime
+import os
+from dotenv import load_dotenv
 from data.simulator import generate_fake_report
 from components.map_view import render_map
 from components.data_feed import render_data_sources # Import the new tab
 from utils.gemini_brain import analyze_incident
 
 # --- 🔐 CONFIGURATION ---
-GEMINI_KEY = "REDACTED"  # <--- PASTE KEY HERE
+load_dotenv()
+GEMINI_KEY = os.getenv("GEMINI_API_KEY")  # Loaded securely from .env file
 
 # --- PAGE CONFIG ---
 st.set_page_config(page_title="DisasterGuard AI", page_icon="🛡️", layout="wide")
