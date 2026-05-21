@@ -2,7 +2,7 @@
 
 **Real-time AI-powered disaster detection and response command center.**
 
-🔗 **Live Demo:** [https://crisisops.streamlit.app](https://crisisops.streamlit.app)
+
 
 ---
 
@@ -67,3 +67,4 @@ CrisisOps/
 ## 📄 License
 
 MIT
+https://crisisops.streamlit.app
